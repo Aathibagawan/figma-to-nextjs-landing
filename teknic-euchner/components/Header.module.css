@@ -1,0 +1,97 @@
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-white);
+  padding: 30px 80px;
+}
+
+.bar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.inner {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-nav-footer);
+  padding-left: 20px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 100%;
+  padding: 0 14px;
+  border-right: 0.5px solid var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--color-white);
+}
+
+.chevron {
+  width: 5px;
+  height: 9px;
+  opacity: 0.8;
+}
+
+.getInTouch {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.menuToggle {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .wrapper {
+    padding: 20px 40px;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 16px 20px;
+  }
+  .inner {
+    padding-left: 16px;
+  }
+}

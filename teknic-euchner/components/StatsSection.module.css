@@ -1,0 +1,98 @@
+.section {
+  background: var(--color-nav-footer);
+  padding: 60px 80px 80px;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.card {
+  position: relative;
+  background: var(--color-card-dark);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  min-height: 252px;
+}
+
+.corner {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--color-primary);
+}
+
+.cornerTl {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+.cornerTr {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+.cornerBl {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+.cornerBr {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  color: var(--color-white);
+}
+
+.value {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: var(--fs-h5);
+  color: var(--color-white);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 1199px) {
+  .section {
+    padding: 48px 40px 60px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 20px 48px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
