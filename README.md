@@ -1,4 +1,4 @@
-# Teknic Euchner — Home Page (Cojective Website Developer Assessment)
+# Teknic Euchner — Home Page 
 
 A pixel-accuracy reproduction of the Figma design at:
 `https://www.figma.com/design/RxgVVLOnvntqzrG6963JkE/TEKNIC-EUCHNER---INTERVIEW--Copy-`
